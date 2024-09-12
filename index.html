@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Design</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-[Inter]">
+    <!-- navbar section -->
+
+    <header class="bg-[#fffdf7]">
+      <nav class="flex justify-between items-center w-[90%] mx-auto md:py-5">
+        <figure>
+          <img class="w-32" src="./images/Logo.png"/>
+        </figure>
+
+        <div
+          class="nav-links duration-500 bg-[#fffdf7] font-semibold md:static absolute z-[1] md:z-[1] md:min-h-fit min-h-[80vh] left-0 top-[-100%] px-[1.9rem] w-full md:w-auto flex max-md:items-center max-sm:min-h-[240px] max-md:min-h-[280px]"
+        >
+          <ul
+            class="flex max-md:flex-col flex=row md:items-center md:gap-[4vw] gap-8"
+          >
+            <li><a class="hover:text-gray-500" href="#">Home</a></li>
+            <li><a class="hover:text-gray-500" href="#Services-section">Services</a></li>
+            <li><a class="hover:text-gray-500" href="#contact-us">Contact</a></li>
+            <li><a class="hover:text-gray-500" href="#footer">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <button><a href="#">Sign Un</a></button>
+          <ion-icon
+            onclick="menuFunctionality(this)"
+            name="menu"
+            class="cursor-pointer md:hidden"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <!-- First Section -->
+
+    <main>
+      <div id="first-section">
+        <div
+          class="first-part grid grid-cols-6 gap-4 w-[90%] mx-auto pt-[70px] max-sm:pt-[40px] pb-[40px] max-sm:text-center"
+        >
+          <div class="col-span-4 max-sm:col-span-6 max-lg:col-span-3">
+            <h2
+              class="text-9xl font-medium mb-[30px] max-md:text-5xl max-lg:text-8xl"
+            >
+              Interior Design
+            </h2>
+            <p
+              class="text-[1.35rem] w-[75%] leading-8 max-sm:w-[100%] max-md:text-[1rem] max-lg:text-[1.2rem]"
+            >
+              Step into a world where the art of Interior Design is meticulously
+              crafted to bring together timeless elegance and cutting-edge
+              modern Innovation, Allowing you to transform your living spaces
+              into the epitome of luxury and sophistication
+            </p>
+          </div>
+          <div
+            class="col-span-2 max-sm:mx-auto max-sm:col-span-6 max-lg:col-span-3"
+          >
+            <img
+              class="w-[507px] h-[368px] max-md:h-[320px]"
+              src="./images/Image 1.png"
+            />
+          </div>
+        </div>
+
+        <div
+          class="second-part grid grid-cols-6 max-md:grid-cols-12 max-lg:grid-cols-8 gap-4 w-[90%] mx-auto"
+        >
+          <div
+            class="col-span-3 max-sm:col-span-12 max-md:col-span-4 max-lg:col-span-3"
+          >
+            <button
+              class="black mb-[60px] max-sm:mx-auto max-md:mb-[30px] max-md:max-w-[220px]"
+            >
+              Start Projects
+            </button>
+            <div
+              class="grid grid-cols-3 max-sm:grid-cols-12 max-md:grid-cols-4"
+            >
+              <div
+                class="col-span-1 max-sm:col-span-4 max-sm:mx-auto max-md:col-span-2"
+              >
+                <p
+                  class="text-[3.2rem] font-noraml max-md:text-[2.5rem] max-lg:text-[2.6rem]"
+                >
+                  400+
+                </p>
+                <p
+                  class="text-[1rem] max-md:text-[0.75rem] max-md:mb-[20px] max-lg:text-[0.8rem]"
+                >
+                  Project complete
+                </p>
+              </div>
+
+              <div
+                class="col-span-1 max-sm:mx-auto max-sm:col-span-4 max-md:col-span-2"
+              >
+                <p
+                  class="text-[3.2rem] font-noraml max-md:text-[2.5rem] max-lg:text-[2.6rem]"
+                >
+                  600+
+                </p>
+                <p
+                  class="text-[1rem] max-md:text-[0.75rem] max-lg:text-[0.8rem]"
+                >
+                  Satisfied Clients
+                </p>
+              </div>
+
+              <div
+                class="col-span-1 max-sm:col-span-4 max-md:col-span-4 max-md:mx-auto"
+              >
+                <p
+                  class="text-[3.2rem] font-noraml max-md:text-[2.5rem] max-lg:text-[2.6rem]"
+                >
+                  100+
+                </p>
+                <p
+                  class="text-[1rem] max-md:text-[0.75rem] max-lg:text-[0.8rem]"
+                >
+                  Unique Styles
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-3 max-sm:col-span-12 max-md:col-span-8 max-lg:col-span-5 relative"
+          >
+            <div
+              class="absolute w-[206px] h-[186px] border-solid border-2 border-black rounded-[4px] z-[-1] top-[-30px] left-[-30px] max-sm:top-[-15px] max-sm:left-[-5px] max-md:top-[-15px] max-md:left-[25px] max-lg:top-[-15px] max-lg:left-[5px]"
+            ></div>
+            <img
+              class="image w-[608px] h-[380px] max-sm:w-[500px] max-sm:h-[300px] max-sm:ml-[10px] max-md:w-[340px] max-md:h-[300px] max-md:ml-[40px] max-lg:w-[500px] max-lg:h-[350px] max-lg:ml-[20px]"
+              src="./images/Image 2.png"
+            />
+            <div
+              class="absolute z-[1] bottom-[0] right-[0px] w-[150px] h-[150px] bg-black flex items-center max-md:w-[100px] max-md:h-[100px] max-lg:w-[125px] max-lg:h-[125px]"
+            >
+              <img src="images/Arrow 1.png" class="mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Services section -->
+
+    <section>
+      <div
+        id="Services-section"
+        class="w-[90%] mx-auto py-[70px] max-sm:pt-[70px]"
+      >
+        <div class="flex start mb-[70px] max-md:justify-center">
+          <div
+            class="w-[60px] h-[2px] bg-[gray] mt-[32px] mr-[25px] max-sm:mt-[22px]"
+          ></div>
+          <h2 class="text-6xl font-semibold max-sm:text-4xl">Our Services</h2>
+          <div
+            class="lg:hidden max-sm:inline-block w-[60px] h-[2px] bg-[gray] mt-[32px] ml-[25px] max-sm:mt-[22px]"
+          ></div>
+        </div>
+
+        <div class="grid grid-cols-6 gap-8">
+          <div class="col-span-2 max-sm:col-span-6 max-md:col-span-3">
+            <div
+              class="flex max-sm:flex-col max-sm:items-center max-sm:text-center"
+            >
+              <ion-icon
+                name="bulb-outline"
+                class="mr-[20px] text-9xl mt-[-35px] max-sm:mt-[0px] max-sm:mr-[0px] max-sm:mb-[10px] max-sm:text-6xl"
+              ></ion-icon>
+              <div class="service-content">
+                <h2 class="mb-[10px] font-bold text-xl">Lighting Design</h2>
+                <p class="max-sm:w-[70%] max-sm:mx-auto">
+                  Achieve the perfect balance of ambient, task, and accent
+                  lighting for a functional atmosphere
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-2 max-sm:col-span-6 max-md:col-span-3">
+            <div
+              class="flex max-sm:flex-col max-sm:items-center max-sm:text-center"
+            >
+              <ion-icon
+                name="infinite-outline"
+                class="mr-[20px] text-9xl mt-[-35px] max-sm:mt-[0px] max-sm:mr-[0px] max-sm:mb-[10px] max-sm:text-6xl"
+              ></ion-icon>
+              <div class="service-content">
+                <h2 class="mb-[10px] font-bold text-xl">Interior Design</h2>
+                <p class="max-sm:w-[70%] max-sm:mx-auto">
+                  From concept to completion, we oversee every detail to bring
+                  your vision to life efficiently
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-2 max-sm:col-span-6 max-md:col-span-3">
+            <div
+              class="flex max-sm:flex-col max-sm:items-center max-sm:text-center"
+            >
+              <ion-icon
+                name="log-out-outline"
+                class="mr-[20px] text-9xl mt-[-35px] max-sm:mt-[0px] max-sm:mr-[0px] max-sm:mb-[10px] max-sm:text-6xl"
+              ></ion-icon>
+              <div class="service-content">
+                <h2 class="mb-[10px] font-bold text-xl">Outdoor Design</h2>
+                <p class="max-sm:w-[70%] max-sm:mx-auto">
+                  Celebrate the changing seasons with our seasonal outdoor decor
+                  services
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Third Section -->
+    <section>
+      <div
+        id="third-section"
+        class="grid grid-cols-6 gap-5 py-[70px] max-sm:py-[0px] w-[90%] mx-auto max-md:text-center"
+      >
+        <div class="col-span-3 max-md:col-span-6">
+          <figure>
+            <img
+              src="./images/Mask group.png"
+              class="h-[617px] w-[100%] max-sm:h-[350px] max-md:h-[450px] max-md:mb-[30px]"
+            />
+          </figure>
+        </div>
+        <div
+          class="col-span-3 max-md:col-span-6 ml-[70px] max-md:ml-[0] relative"
+        >
+          <h2
+            class="text-[3.5rem] mt-[-15px] mb-[30px] font-semibold max-sm:text-[1.8rem] max-lg:text-[2.5rem] max-lg:mb-[10px]"
+          >
+            Designing Your Dream With Brilliance
+          </h2>
+          <p
+            class="text-[1.32rem] mb-[15px] max-sm:text-[1rem] max-lg:text-[1.2rem]"
+          >
+            Elevate your spaces with bespoke interior designs that reflect your
+            unique style and aspirations, crafted with precision and brilliance
+            for an unforgettable living experience
+          </p>
+
+          <div
+            class="accordion-header flex items-center justify-between cursor-pointer transition ease-in-out duration-300 border-b max-md:block"
+          >
+            <span
+              class="text-xl font-semibold mb-[10px] max-sm:text-base max-lg:text-lg max-md:text-xl max-md:mb-[10px]"
+            >
+              Living Room Interior Design
+            </span>
+            <ion-icon
+              name="add-outline"
+              class="plus absolute right-[0px] text-3xl mb-[10px] max-md:mb-[0] max-md:mt-[0]"
+            ></ion-icon>
+          </div>
+
+          <div
+            class="accordion-body max-h-0 overflow-hidden transition-all duration-200 ease-out max-lg:text-[0.85rem]"
+          >
+            <div class="py-1 max-md:text-lg">
+              Transform your living room into a cozy haven with modern
+              furniture, vibrant colors, and stylish decor.
+            </div>
+          </div>
+
+          <div
+            class="accordion-header flex items-center justify-between cursor-pointer transition ease-in-out duration-300 border-b max-md:block mt-[25px]"
+          >
+            <span
+              class="text-xl font-semibold mb-[10px] max-sm:text-base max-lg:text-lg max-md:text-xl max-md:mb-[10px]"
+            >
+              Commercial Office Room Interior Design
+            </span>
+            <ion-icon
+              name="add-outline"
+              class="plus absolute right-[0px] text-3xl mb-[10px] max-md:mb-[0] max-md:mt-[0]"
+            ></ion-icon>
+          </div>
+
+          <div
+            class="accordion-body max-h-0 overflow-hidden transition-all duration-200 ease-out max-lg:text-[0.85rem]"
+          >
+            <div class="py-1 max-md:text-lg">
+              Enhance your commercial office with sleek furniture, professional
+              color schemes, and functional layouts.
+            </div>
+          </div>
+
+          <button
+            class="absolute bottom-[0] max-md:static max-md:mt-[30px] max-md:text-xl max-md:max-w-[300px] max-md:block max-md:mx-auto"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- fourth Section -->
+    <section>
+      <div
+        id="fourth-section"
+        class="grid grid-cols-6 gap-5 py-[70px] max-sm:pb-[70px] w-[90%] mx-auto max-sm:pt-[70px] max-md:gap-8"
+      >
+        <div
+          class="col-span-3 max-md:col-span-6 mr-[70px] max-md:ml-[0] max-md:mr-[0]"
+        >
+          <h2
+            class="text-[3.2rem] mt-[-15px] mb-[30px] font-semibold max-sm:text-[1.8rem] max-md:text-center max-lg:text-[2.5rem] max-lg:mb-[10px]"
+          >
+            Designing Your Dream in Three Simple Steps
+          </h2>
+
+          <div class="grid grid-cols-1 gap-8 max-md:grid-cols-3">
+            <div class="col-span-1 max-sm:col-span-6 max-md:col-span-1">
+              <div
+                class="flex max-md:flex-col max-md:items-center max-md:text-center"
+              >
+                <div>
+                  <div
+                    class="w-[60px] h-[60px] rounded-[36px] bg-[black] flex justify-center items-center max-md:mb-[20px]"
+                  >
+                    <ion-icon
+                      name="rocket-outline"
+                      class="text-3xl text-[white] mt-[0px] max-sm:text-3xl max-sm:mt-[0px] max-sm:mr-[0px]"
+                    ></ion-icon>
+                  </div>
+                  <div
+                    class="max-md:hidden inline-block w-[1px] h-[60px] bg-gray-200 ml-[30px] mt-[10px]"
+                  ></div>
+                </div>
+                <div class="service-content ml-[20px] max-md:ml-[0]">
+                  <h2 class="mb-[10px] font-bold text-xl">Start Project</h2>
+                  <p
+                    class="w-[80%] max-sm:w-[70%] max-sm:mx-auto max-lg:w-[100%]"
+                  >
+                    Embark on your design adventure by initiating your project.
+                    Share your vision and set the stage for a bespoke design
+                    experience
+                  </p>
+                  <div
+                    class="line hidden w-[1px] h-[60px] bg-gray-200 mt-[30px] mx-auto"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-1 max-sm:col-span-6 max-md:col-span-1">
+              <div
+                class="flex max-md:flex-col max-md:items-center max-md:text-center"
+              >
+                <div>
+                  <div
+                    class="w-[60px] h-[60px] rounded-[36px] bg-[black] flex justify-center items-center max-md:mb-[20px]"
+                  >
+                    <ion-icon
+                      name="hammer-outline"
+                      class="text-3xl text-[white] mt-[0px] max-sm:mt-[0px] max-sm:text-3xl max-sm:mr-[0px]"
+                    ></ion-icon>
+                  </div>
+                  <div
+                    class="max-md:hidden w-[1px] h-[60px] bg-gray-200 ml-[30px] mt-[10px] max-md:block"
+                  ></div>
+                </div>
+                <div class="service-content ml-[20px] max-md:ml-[0]">
+                  <h2 class="mb-[10px] font-bold text-xl">Craft</h2>
+                  <p
+                    class="w-[80%] max-sm:w-[70%] max-sm:mx-auto max-lg:w-[100%]"
+                  >
+                    Collaborate closely to achieve design excellence refining
+                    your vision and crafting brilliance into every aspect of
+                    your space
+                  </p>
+                  <div
+                    class="line hidden w-[1px] h-[60px] bg-gray-200 mt-[30px] mx-auto"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-1 max-sm:col-span-6 max-md:col-span-1">
+              <div
+                class="flex max-md:flex-col max-md:items-center max-md:text-center"
+              >
+                <div>
+                  <div
+                    class="w-[60px] h-[60px] rounded-[36px] bg-[black] flex justify-center items-center max-md:mb-[20px]"
+                  >
+                    <ion-icon
+                      name="checkmark-circle-outline"
+                      class="text-3xl text-[white] mt-[0px] max-sm:mt-[0px] max-sm:text-3xl max-sm:mr-[0px]"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div class="service-content ml-[20px] max-md:ml-[0]">
+                  <h2 class="mb-[10px] font-bold text-xl">Execute</h2>
+                  <p
+                    class="w-[80%] max-sm:w-[70%] max-sm:mx-auto max-lg:w-[100%] max-md:text-[0.93rem]"
+                  >
+                    Witness your vision becoming a reality as we execute the
+                    design plan with precision. Celebrate the joy of your newly
+                    transformed space
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-3 max-md:col-span-6">
+          <figure>
+            <img
+              src="./images/Image.png"
+              class="h-[617px] w-[100%] max-sm:h-[350px] max-md:h-[450px] max-md:mr-[30px] max-sm:mt-[20px]"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+     <section>
+       <h2 class="lg:hidden text-5xl font-semibold text-center w-[90%] mx-auto max-md:block">" What Our Customers Say About Us "</h2>
+       <div id="testimonial" class="grid grid-cols-12 gap-8 w-[90%] mx-auto py-[70px] max-sm:pb-[20px] max-md:pt-[30px] max-lg:gap-7">
+        <div class="col-span-7 max-md:col-span-12">
+          <div class="relative">
+            <figure>
+              <img src="images/Mask group (1).png" class="h-[500px] testmonial-img">
+            </figure>
+
+            <div class="first-testimonial-card p-[40px] bg-[#1F1F1F] h-[410px] max-lg:h-[410px] text-white rounded-[4px] absolute bottom-0 left-[190px] max-md:left-[180px] max-lg:left-[37%]">
+              <figure>
+                <img src="images/quoate.png" class="w-[30px] h-[25px]">
+              </figure>
+              <p class="text-[19px] my-[40px] max-sm:text-[14px] max-lg:my-[30px] max-md:text-[20px] max-lg:text-[15px]">Exceptional service! From the initial consultation to the final reveal, your team demonstrated professionalism and a keen eye for design. Highly recommend!</p>
+              <div class="testimonial-info flex gap-4 mb-[50px] max-lg:mb-[20px]">
+                <figure>
+                  <img src="images/Mask group 3.png" class="w-[48px] h-[48px]">
+                </figure>
+                <div class="mt-[10px]">
+                  <h2 class="max-lg:text-[14px] max-sm:text-[12px]">Sophie Carter</h2>
+                  <p class="text-[#929292] max-lg:text-[12px] max-sm:text-[10px]">New York, USA</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class=" testimonial-buttons">
+              <div class="flex gap-12 max-lg:gap-4 mt-[25px]">
+                <div class="bg-[#F1F1F1] flex items-center justify-center rounded-[4px] px-3 py-2">
+                  <ion-icon name="arrow-back-outline" class="text-3xl mt-0 text-[#464646]"></ion-icon>
+                </div>
+                <div class="bg-[#F1F1F1] flex items-center justify-center rounded-[4px] px-3 py-2">
+                  <ion-icon name="arrow-forward-outline" class="text-3xl mt-0 text-[#464646]"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-5 relative max-md:col-span-12">
+          <h2 class="text-4xl font-semibold ml-[-40px] max-lg:ml-[-20px] max-lg:text-2xl max-lg:mt-[20px] max-md:hidden">What Our Customers Say About Us</h2>
+          <div class="second-testimonial-card p-[40px] bg-[#1F1F1F] h-[410px] max-lg:h-[410px] rounded-[4px] text-white absolute bottom-0 max-md:static max-md:ml-[180px]">
+            <figure>
+              <img src="images/quoate.png" class="w-[30px] h-[25px]">
+            </figure>
+            <p class="text-[19px] my-[40px] max-sm:text-[14px] max-md:text-[20px] max-lg:text-[16px]">Exceptional service! From the initial consultation to the final reveal, your team demonstrated professionalism and a keen eye for design. Highly recommend!</p>
+            <div class="testimonial-info flex gap-4 mb-[40px]">
+              <figure>
+                <img src="images/Mask group (2).png" class="w-[48px] h-[48px]">
+              </figure>
+              <div class="max-sm:mt-[10px]">
+                <h2 class="max-sm:text-[12px]">James Bennett</h2>
+                <p class="text-[#929292] max-sm:text-[10px]">Toronto, Canada</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+     </section>
+
+    <!-- Contact Us -->
+
+     <section>
+      <div id="contact-us" class="text-center w-[65%] mx-auto py-[70px] max-sm:py-[30px]">
+        <h2 class="font-semibold text-[58px] leading-[70px] mb-[20px] w-[80%] mx-auto max-sm:text-2xl">Subscribe to Our Newsletter for Design Insights</h2>
+        <p class="text-[#545454] text-[1.5rem] leading-[40px] w-[75%] mx-auto mb-[100px] max-sm:mb-[20px] max-sm:text-lg">Be the first to discover trends, inspirations, and special offers as we bring the world of design directly to your inbox</p>
+        <div class="relative">
+          <input type="text" placeholder="✉️  Enter your email address" class="w-[100%] h-[100px] rounded-[4px] px-[50px] text-[1.5rem] shadow-2xl absolute bottom-[-120px] left-0 focus:outline-none max-sm:bottom-[-80px] max-sm:px-[10px] max-sm:text-[0.65rem] max-md:text-[0.8rem] max-md:h-[70px] max-md:bottom-[-105px] max-lg:h-[80px] max-lg:bottom-[-110px] max-lg:px-[30px] max-lg:text-[1rem]">
+          <button class="h-[90px] max-w-[220px] rounded-[4px] absolute right-[5px] bottom-[-115px] max-sm:max-w-[90px] max-sm:text-[12px] max-md:max-w-[150px] max-sm:bottom-[-75px] max-md:h-[60px] max-md:bottom-[-100px] max-lg:max-w-[180px] max-lg:h-[70px] max-lg:bottom-[-105px]">Subscribe</button>
+        </div>
+      </div>
+     </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <div id="footer" class="bg-[#1f1f1f]">
+        <div
+          class="grid grid-cols-4 gap-8 pt-[120px] pb-[70px] w-[90%] mx-auto"
+        >
+          <div class="col-span-1 max-sm:col-span-2">
+            <figure>
+              <img src="./images/logo 2.png" class="w-32" />
+            </figure>
+            <p class="text-[#D1D1D1] w-[75%] my-[40px]">
+              VivaDecor your premier destination for luxury and modern interior
+              design
+            </p>
+            <div class="flex gap-3">
+              <div
+                class="flex items-center justify-center w-[36px] h-[36px] bg-[#313131] rounded-[8px]"
+              >
+                <ion-icon
+                  name="logo-facebook"
+                  class="text-2xl mt-0 text-white"
+                ></ion-icon>
+              </div>
+
+              <div
+                class="flex items-center justify-center w-[36px] h-[36px] bg-[#313131] rounded-[8px]"
+              >
+                <ion-icon
+                  name="logo-twitter"
+                  class="text-2xl mt-0 text-white"
+                ></ion-icon>
+              </div>
+
+              <div
+                class="flex items-center justify-center w-[36px] h-[36px] bg-[#313131] rounded-[8px]"
+              >
+                <ion-icon
+                  name="logo-instagram"
+                  class="text-2xl mt-0 text-white"
+                ></ion-icon>
+              </div>
+
+              <div
+                class="flex items-center justify-center w-[36px] h-[36px] bg-[#313131] rounded-[8px]"
+              >
+                <ion-icon
+                  name="logo-linkedin"
+                  class="text-2xl mt-0 text-white"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-1 max-sm:col-span-2 ml-[150px] max-md:ml-[10px] max-lg:ml-[50px]">
+            <p class="text-white font-semibold mb-[25px]">Our Services</p>
+            <p class="text-[#D1D1D1] mb-[25px]">Interior design</p>
+            <p class="text-[#D1D1D1] mb-[25px]">Outdoor design</p>
+            <p class="text-[#D1D1D1] mb-[25px]">Lightning design</p>
+            <p class="text-[#D1D1D1] mb-[25px]">Office design</p>
+          </div>
+
+          <div class="col-span-1 max-sm:col-span-2 ml-[80px] max-md:ml-0 max-lg:ml-[40px]">
+            <p class="text-white font-semibold mb-[25px]">Our Services</p>
+            <p class="text-[#D1D1D1] mb-[25px]">Reviews</p>
+            <p class="text-[#D1D1D1] mb-[25px]">Careers</p>
+            <p class="text-[#D1D1D1] mb-[25px]">Pricing</p>
+            <p class="text-[#D1D1D1] mb-[25px]">Press inquires</p>
+          </div>
+
+          <div class="col-span-1 max-sm:col-span-2">
+            <p class="text-white font-semibold mb-[25px]">Our Services</p>
+            <p class="text-[#D1D1D1] mb-[25px]">info@vivadecor.com</p>
+            <p class="text-[#D1D1D1] mb-[25px] w-[80%]">Design Avenue Cityville, CA 90210 United States</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+    <!-- ionicons cdn -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

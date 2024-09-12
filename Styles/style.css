@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fffdf7;
+}
+
+ion-icon {
+    font-size: 70px;
+    margin-top: 10px
+}
+
+button {
+    display: block;
+    padding: 15px 40px!important;
+    background: black!important;
+    color: white!important;
+    cursor: pointer!important;
+    width: 100%!important;
+    transition: all 0.5s ease-out;
+    max-width:  fit-content;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 10px 30px!important;
+    }
+}
+
+@media (max-width: 640px) {
+    .line {
+        display: block!important;
+    }
+}
+
+@media (max-width: 460px) {
+    div.second-part img.image{
+        width: 350px;
+    }
+
+    .testmonial-img {
+        display: none;
+    }
+
+    .testimonial-buttons {
+        display: none;
+    }
+
+    .first-testimonial-card {
+        position: static!important;
+        height: 300px!important;
+    }
+
+    .second-testimonial-card {
+        height: 300px!important;
+        margin-left: 0!important;
+    }
+
+    div#contact-us button  {
+        padding: 15px 10px!important;
+    }
+}
