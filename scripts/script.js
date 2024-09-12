@@ -4,7 +4,7 @@ const menuFunctionality = (element) => {
     if(window.innerWidth <= 520 && window.innerWidth >= 481) {
         navLinks.classList.toggle('max-sm:top-[12%]') 
     } else if (window.innerWidth <= 480) {
-        navLinks.classList.toggle('max-sm:top-[18%]')
+        navLinks.classList.toggle('max-sm:top-[14%]')
     } else {
         navLinks.classList.toggle('top-[24%]')
     }
